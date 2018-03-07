@@ -1,10 +1,11 @@
 {
-  "name": "aws-node-rekognition-analysis-s3-image",
-  "description": "Analyse an Image from an S3 Bucket with Amazon Rekognition",
-  "version": "1.0.0",
-  "author": "lynnaloo",
+  "name": "rekognition-cats",
+  "description": "Run rekogniton against cat images and save results to a text file",
+  "version": "0.0.1",
+  "author": "Vignesh Sankaran<developer@sankaran.io>",
+  "repository": "https://github.com/vignesh-sankaran/rekognition-cats",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.32.0"
+    "aws-sdk": "2.205.0"
   }
 }

@@ -1,4 +1,4 @@
-service: rekognition-analysis-s3-image
+service: rekognition-cats
 
 frameworkVersion: ">=1.10.0"
 
@@ -18,7 +18,7 @@ provider:
     - Effect: "Allow"
       Action:
         - "rekognition:*"
-      Resource: "*"   
+      Resource: "*"
 
 functions:
   imageAnalysis:
@@ -26,4 +26,4 @@ functions:
     events:
       - http:
           path: analysis
-          method: post    
+          method: get
