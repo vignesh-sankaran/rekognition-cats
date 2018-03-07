@@ -1,8 +1,10 @@
 'use strict';
 
+const ImageAnalyser = require('./lib/imageAnalyser');
+
 module.exports.imageAnalysis = (event, context, callback) => {
   return ImageAnalyser
-    .getImageLabels()
+    .analyseAllImages()
     .then((data) => {
       const response = {
         statusCode: 200,
@@ -18,3 +20,4 @@ module.exports.imageAnalysis = (event, context, callback) => {
       });
     });
 };
+
