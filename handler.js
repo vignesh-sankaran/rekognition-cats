@@ -7,8 +7,9 @@ module.exports.imageAnalysis = (event, context, callback) => {
     .analyseAllImages()
     .then((data) => {
       const response = {
+        isBase64Encoded: false,
         statusCode: 200,
-        body: data,
+        body: JSON.stringify(data),
       };
       callback(null, response);
     })
