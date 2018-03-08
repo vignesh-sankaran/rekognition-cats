@@ -21,4 +21,3 @@ module.exports.imageAnalysis = (event, context, callback) => {
       });
     });
 };
-
